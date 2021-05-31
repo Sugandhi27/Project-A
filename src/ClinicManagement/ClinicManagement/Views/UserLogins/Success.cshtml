@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ }
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<center>
+    <table>
+        <tr>
+            <td>
+                <div class="card">
+                    <img src="~/css/icons8-stethoscope.png" alt="Doctor Icon" style="width:100%">
+                    <h1>    Doctor    </h1>
+                    <p class="title">To view existing Doctors </p>
+                    <a href="http://localhost:10859/DoctorDetails/index" class="btnn grey">Doctors available</a>
+                    <br/>
+                    <p class="title">To add a Doctor !</p>
+                    <a href="http://localhost:10859/DoctorDetails/Create" class="btnn black">Add Doctor</a>
+                </div>
+            </td>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td>
+                <div class="card">
+                    <img src="~/css/fever.png" alt="Patient Icon" style="width:100%">
+                    <h1>    Patient    </h1>
+                    <p class="title">To view existing patients </p>
+                    <a href="http://localhost:10859/PatientDetails/index" class="btnn grey">Patients available</a>
+                    <br/>
+                    <p class="title">To add a Patient !</p>
+                    <a href="http://localhost:10859/PatientDetails/Create" class="btnn black">Add Patient</a>
+                </div>
+            </td>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td>
+                <div class="card">
+                    <center><img src="~/css/database.png" alt="Patient Icon" style="width:70%"></center>
+                    <h1>Appointment</h1>
+                    <p class="title">To view existing appointments </p>
+                    <a href="http://localhost:10859/Appointments" class="btnn grey">Appointments available</a>
+                    <br/>
+                    <p class="title">To add a Appointment !</p>
+                    <a href="http://localhost:10859/Appointments/Create" class="btnn black">Add Appointment</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</center>
+<div>
+    <a asp-controller="UserLogins" asp-action="Login">Back to Login</a>
+</div>
